@@ -6,7 +6,7 @@ function Header () {
     return (
         <div className="header">
             <div className="flex
-            justify-start items-center font-light text-xl py-3 gap-6 text-[black]">
+            justify-start items-center bg-[#cdd4db] font-light text-xl py-3 gap-6 text-[black]">
                 <a href="#">
                     <img src={logo} className="w-20 h-20 expand"/>
                 </a>
