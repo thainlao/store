@@ -1,0 +1,78 @@
+.swings {
+    width: 100%;
+    height: 45vh;
+    background-color: #f0efe8;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease-in;
+  }
+
+  @media (max-width: 768px) {
+    .swings {
+      width: 100px; /* Change the width to occupy the full width of the viewport */
+      height: auto;
+      margin-right: 0px;
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .swings {
+      width: 90%;
+    }
+  }
+  
+  .photo {
+    background-image: url('../assets/servise.png');
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.3s ease-in 0.3s;
+    opacity: 0;
+  }
+
+  .photo1 {
+    background-image: url('../assets/delivery.png');
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.3s ease-in 0.3s;
+    opacity: 0;
+  }
+
+  .photo2 {
+    background-image: url('../assets/Money-PNG-Photos.png');
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.3s ease-in 0.3s;
+    opacity: 0;
+  }
+
+  .swings:hover {
+    background-color: #e9e3e3;
+  }
+  
+  .text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+  }
+  
+  .text.loaded {
+    opacity: 1;
+  }
+
+  .photo.loaded {
+    opacity: 1;
+  }
+
+  .photo1.loaded {
+    opacity: 1;
+  }
+
+  .photo2.loaded {
+    opacity: 1;
+  }

@@ -1,13 +1,61 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import LeftContainer from './components/LeftContainer';
 import Header from './components/Header';
+import Headset from './Links/Headset';
+import Laptops from './Links/Laptops';
+import Phones from './Links/Phones';
+import { BrowserRouter as Router, Link, Routes, Route } from "react-router-dom";
+import Pcs from './Links/Pcs';
+import Consoles from './Links/Consoles';
+import Ipads from './Links/Ipads';
+import Mainbody from './Mainbody/Mainbody';
+import Login from './components/Login';
+import Korzina from './components/Korzina';
+import Dashboard from './components/Dashboard';
 
 function App() {
+  const [showMainbody, setShowMainbody] = useState(true);
+  const [price, setPrice] = useState(0);
+  const [items, setItems] = useState([]);
+  const [korzCount, setkorzcount] = useState(0);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const handleBuyClick = (newPrice, item) => {
+    setPrice((prevPrice) => prevPrice + newPrice);
+    setItems((prevItems) => [...prevItems, { ...item, newPrice, quantity: 1 }]);
+    setkorzcount(korzCount + 1);
+  };
+
+  const handleRemoveItemClick = (index) => {
+    setItems((prevItems) => {
+      const updatedItems = [...prevItems];
+      const removedItem = updatedItems.splice(index, 1)[0];
+      setkorzcount(korzCount - 1);
+      setPrice((prevPrice) => prevPrice - removedItem.newPrice);
+      return updatedItems;
+    });
+  };
+
   return (
-    <div>
-      <Header />
+    <Router>
+      <Header price={price} korzCount={korzCount} isLoggedIn={isLoggedIn} />
       <LeftContainer />
-    </div>
+      <Routes>
+        {showMainbody && (
+          <Route path="/" element={<Mainbody setShowMainbody={setShowMainbody} />} />
+        )}
+        <Route path="/headset" element={<Headset onBuyClick={handleBuyClick} />} />
+        <Route path="/laptops" element={<Laptops onBuyClick={handleBuyClick} />} />
+        <Route path="/pcs" element={<Pcs onBuyClick={handleBuyClick} />} />
+        <Route path="/phones" element={<Phones onBuyClick={handleBuyClick} />} />
+        <Route path="/consoles" element={<Consoles onBuyClick={handleBuyClick} />} />
+        <Route path="/ipads" element={<Ipads onBuyClick={handleBuyClick} />} />
+        <Route path='/mainbody' element={<Mainbody />} />
+        <Route path='/login' element={<Login setIsLoggedIn={setIsLoggedIn} />} />
+        <Route path='/korzina' element={<Korzina items={items} onRemoveItemClick={handleRemoveItemClick} />} />
+        <Route path="/dashboard" element={<Dashboard /> } />
+      </Routes>
+    </Router>
   );
 }
 
