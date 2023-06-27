@@ -12,6 +12,7 @@ import Mainbody from './Mainbody/Mainbody';
 import Login from './components/Login';
 import Korzina from './components/Korzina';
 import Dashboard from './components/Dashboard';
+import Redux from './store/Redux';
 
 function App() {
   const [showMainbody, setShowMainbody] = useState(true);
@@ -52,8 +53,9 @@ function App() {
         <Route path="/ipads" element={<Ipads onBuyClick={handleBuyClick} />} />
         <Route path='/mainbody' element={<Mainbody />} />
         <Route path='/login' element={<Login setIsLoggedIn={setIsLoggedIn} />} />
-        <Route path='/korzina' element={<Korzina items={items} onRemoveItemClick={handleRemoveItemClick} />} />
+        <Route path='/korzina' element={<Korzina items={items} onRemoveItemClick={handleRemoveItemClick} setkorzcount={setkorzcount} setPrice={setPrice} setItems={setItems} />} />
         <Route path="/dashboard" element={<Dashboard /> } />
+        <Route path="/redux" element={<Redux /> } />
       </Routes>
     </Router>
   );

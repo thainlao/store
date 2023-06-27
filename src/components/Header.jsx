@@ -38,7 +38,7 @@ function Header({ price, cartQuantity, korzCount, isLoggedIn }) {
       }`}
     >
       <div className="flex flex-wrap justify-start items-center bg-[#f0efe8] font-light  lg:font-normal lg:text-xl text-sm py-6 gap-6 text-[black]">
-        <Link to='/mainbody' className="lg:ml-6 md:ml-6 cursor-pointer expand">Меню</Link>
+        <Link to='/' className="lg:ml-6 md:ml-6 cursor-pointer expand">Меню</Link>
         <Link to='/phones' className="cursor-pointer expand">Телефоны</Link>
         <Link to='/laptops' className="cursor-pointer expand">Ноутбуки</Link>
         <Link to='/ipads' className="cursor-pointer expand">Планшеты</Link>
@@ -52,13 +52,13 @@ function Header({ price, cartQuantity, korzCount, isLoggedIn }) {
         </div>
         <Link to='/korzina'>
           <div className="relative">
-            <img src={korzina} className="mr-4 w-8 h-8 expand cursor-pointer" alt="Корзина" />
+            <img src={korzina} className="mr-4 w-8 h-8 cursor-pointer" alt="Корзина" />
             <div className="flex mr-3 justify-center items-center">
               {korzCount > 0 ? (
                 <p className="rounded-full text-sm bg-[red] h-5 w-6 items-center flex justify-center
-              border border-black border-opacity-50 expand">{korzCount}</p>
+              border border-black border-opacity-50">{korzCount}</p>
               ) : (
-                <p className="text-sm expand">Пусто</p>
+                <p className="text-sm">Пусто</p>
               )}
             </div>
             {cartQuantity > 0 && (
@@ -67,19 +67,19 @@ function Header({ price, cartQuantity, korzCount, isLoggedIn }) {
           </div>
           </Link>
           {isLoggedIn ? (
-              <Link to="/dashboard" className="flex flex-col justify-center items-center">
+             <Link to="/dashboard" className="flex  flex-col justify-center items-center">
                 {profileImage ? (
-                  <img src={profileImage} className="mr-4 w-8 h-8 expand cursor-pointer" alt="Логин" />
+                  <img src={profileImage} className="mr-4 w-8 h-8 cursor-pointer" alt="Логин" />
                 ) : (
-                  <img src={loginpng} className="mr-4 w-8 h-8 expand cursor-pointer" alt="Логин" />
+                  <img src={loginpng} className="mr-4 w-8 h-8 cursor-pointer" alt="Логин" />
                 )}
-                <p className="text-sm mr-4 expand">Мой аккаунт</p>
+                <p className="text-sm mr-4 ">Мой аккаунт</p>
               </Link>
             ) : (
               <Link to="/login" className="flex flex-col justify-center items-center">
-                <img src={loginpng} className="mr-4 w-8 h-8 expand cursor-pointer" alt="Логин" />
-                <p className="text-sm mr-4 expand">Войдите</p>
-              </Link>
+                <img src={loginpng} className="mr-4 w-8 h-8 cursor-pointer" alt="Логин" />
+                <p className="text-sm mr-4">Войдите</p>
+                </Link>
         )}
       </div>
       <hr className="bg-[black] p-[1px]" />

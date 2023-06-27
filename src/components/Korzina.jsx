@@ -6,7 +6,7 @@ import emailpng from '../2assets/email.png';
 import addresspng from '../2assets/address.png';
 import namepng from '../2assets/name.png';
 
-const Korzina = ({ items, onRemoveItemClick  }) => {
+const Korzina = ({ items, onRemoveItemClick, setkorzcount, setPrice, setItems  }) => {
   const [isPackagingChecked, setPackagingChecked] = useState(false);
   const [deliveryOption, setDeliveryOption] = useState("delivery");
   const [paymentOption, setPaymentOption] = useState("");
@@ -83,8 +83,10 @@ const Korzina = ({ items, onRemoveItemClick  }) => {
     setAddress("");
     setModalOpen(false)
 
-    navigate("/mainbody");
-    window.location.reload();
+    navigate("/");
+    setkorzcount(0)
+    setPrice(0)
+    setItems([])
   };
 
   return (

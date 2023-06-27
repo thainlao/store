@@ -27,7 +27,7 @@ function LeftContainer() {
         className="bg-[#f0efe8] hidden lg:block"
       >
         <div className="flex items-center gap-6 flex-col py-28">
-          <Link to='/mainbody'>
+          <Link to='/'>
             <img src={logo} className="w-12 h-12 cursor-pointer expand" />
           </Link>
           <Link to='/ipads'>
