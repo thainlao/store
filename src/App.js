@@ -13,6 +13,13 @@ import Login from './components/Login';
 import Korzina from './components/Korzina';
 import Dashboard from './components/Dashboard';
 import Redux from './store/Redux';
+import Orders from './components/Orders';
+import Arts from './Mainbody/Arts';
+
+import photo1 from './assets/airpods1.png';
+import photo2 from './assets/applewatch.png';
+import photo3 from './assets/macbook1.png';
+import photo4 from './assets/xbox1.png';
 
 function App() {
   const [showMainbody, setShowMainbody] = useState(true);
@@ -20,6 +27,7 @@ function App() {
   const [items, setItems] = useState([]);
   const [korzCount, setkorzcount] = useState(0);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleBuyClick = (newPrice, item) => {
     setPrice((prevPrice) => prevPrice + newPrice);
@@ -39,7 +47,7 @@ function App() {
 
   return (
     <Router>
-      <Header price={price} korzCount={korzCount} isLoggedIn={isLoggedIn} />
+      {!isModalOpen && <Header price={price} korzCount={korzCount} isLoggedIn={isLoggedIn} />}
       <LeftContainer />
       <Routes>
         {showMainbody && (
@@ -53,9 +61,22 @@ function App() {
         <Route path="/ipads" element={<Ipads onBuyClick={handleBuyClick} />} />
         <Route path='/mainbody' element={<Mainbody />} />
         <Route path='/login' element={<Login setIsLoggedIn={setIsLoggedIn} />} />
-        <Route path='/korzina' element={<Korzina items={items} onRemoveItemClick={handleRemoveItemClick} setkorzcount={setkorzcount} setPrice={setPrice} setItems={setItems} />} />
-        <Route path="/dashboard" element={<Dashboard /> } />
-        <Route path="/redux" element={<Redux /> } />
+        <Route
+          path='/korzina'
+          element={
+            <Korzina
+              items={items}
+              onRemoveItemClick={handleRemoveItemClick}
+              setkorzcount={setkorzcount}
+              setPrice={setPrice}
+              setItems={setItems}
+              setIsModalOpen={setIsModalOpen}
+            />
+          }
+        />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/redux" element={<Redux />} />
+        <Route path="/orders" element={<Orders />} />
       </Routes>
     </Router>
   );

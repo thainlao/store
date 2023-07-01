@@ -2,12 +2,20 @@ import React, { useState, useEffect } from "react";
 import korzina from '../assets/korzina.png';
 import loginpng from '../assets/login.png';
 import { Link, useLocation } from "react-router-dom";
+import phoneImage from '../assets/iphone1.png';
+import laptopImage from '../assets/macbook1.png';
+import ipadImage from '../assets/planshet.png';
+import pcImage from '../assets/pc.png';
+import consoleImage from '../assets/xbox1.png';
+import headsetImage from '../assets/headset.png';
 
-function Header({ price, cartQuantity, korzCount, isLoggedIn }) {
+function Header({ price, cartQuantity, korzCount, isLoggedIn }) {  
   const [isVisible, setIsVisible] = useState(true);
   const [formattedPrice, setFormattedPrice] = useState(price.toLocaleString());
   const location = useLocation();
-  const profileImage = localStorage.getItem('profileImage');
+  const [profileImage, setProfileImage] = useState(localStorage.getItem('profileImage'));
+  
+  
 
   useEffect(() => {
     let prevScrollPos = window.pageYOffset;
@@ -37,7 +45,7 @@ function Header({ price, cartQuantity, korzCount, isLoggedIn }) {
         isVisible ? "opacity-100" : "opacity-0"
       }`}
     >
-      <div className="flex flex-wrap justify-start items-center bg-[#f0efe8] font-light  lg:font-normal lg:text-xl text-sm py-6 gap-6 text-[black]">
+      <div className="flex flex-wrap justify-start items-center bg-[#f0efe8] font-light  lg:font-normal lg:text-xl text-[10px] md:text-sm py-6 gap-6 text-[black]">
         <Link to='/' className="lg:ml-6 md:ml-6 cursor-pointer expand">Меню</Link>
         <Link to='/phones' className="cursor-pointer expand">Телефоны</Link>
         <Link to='/laptops' className="cursor-pointer expand">Ноутбуки</Link>

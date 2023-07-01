@@ -23,7 +23,7 @@ code {
 
 @media (max-width: 768px) {
   .header {
-    height: 170px;
+    height: auto;
     position: fixed;
     
   }

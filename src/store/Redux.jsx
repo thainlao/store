@@ -1,7 +1,10 @@
 import React, {useState} from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { fetchCustomers } from "./asyncAction/customers";
+import { Connect } from "react-redux";
 
-function Redux () {
+
+function Redux ({ fetchCustomers }) {
 const dispatch = useDispatch();
 
 const addCash = (cash) => {
@@ -54,7 +57,7 @@ const customers = useSelector(state => state.customers.customers)
         </div>
         {customers.length > 0 
             ?
-            <div className="border border-black p-[8px]">
+            <div className="border border-black p-[8px] cursor-pointer">
                 {customers.map(customer =>
                     <div onClick={() => removeCustomer(customer)}>{customer.name}</div>
                     )}
@@ -64,6 +67,10 @@ const customers = useSelector(state => state.customers.customers)
                 Клиенты отсутсвуют!
             </div>
         }
+                <button onClick={fetchCustomers} className="rounded-full h-14 w-36 bg-[#ffffff]
+            text-sm border hover:bg-[#f8f3f3] border-black border-opacity-50">
+             Add json users
+            </button>
     </div>
     ) 
 }

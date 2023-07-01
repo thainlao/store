@@ -1,0 +1,31 @@
+.dashboardcontainer {
+    width: 70%;
+    height: auto;
+    background-color: #f0efe8;
+}
+
+.dashdiv {
+    padding-top: 140px;
+    padding-bottom: 45px;
+    height: 100vh
+}
+
+@media (max-width: 768px) {
+    .dashboardcontainer {
+      height: auto;
+      width: auto;
+    }
+  }
+
+  @media (max-width: 1536px) {
+    .dashboardcontainer {
+      height: auto;
+      width: 80%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .dashdiv {
+        padding-top: 150px;
+    }
+  }

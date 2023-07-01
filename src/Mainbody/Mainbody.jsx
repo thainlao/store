@@ -11,6 +11,7 @@ import xbox1 from '../assets/xbox1.png';
 import watch from '../assets/pc.png';
 import planshet from '../assets/planshet.png';
 import airpods1 from '../assets/airpods1.png';
+import applewatch from '../assets/applewatch.png';
 import Swings from "./Swings";
 import logo from '../assets/logo.png';
 import Delivery from "./Delivery";
@@ -18,6 +19,7 @@ import Money from "./Money";
 import End from "./End";
 import scrollpng from '../assets/scroll.png';
 import { Navigate, useNavigate } from "react-router-dom";
+import Arts from "./Arts";
 
 function Mainbody() {
   const [showButton, setshowButton ] = useState(false);
@@ -62,7 +64,7 @@ function Mainbody() {
             <p className="lg:text-xl  font-medium">Airpods PRO</p>
             <div className="flex justify-center"><img className="lg:h-40 lg:w-40 md:h-36 md:w-36 h-12 w-12" src={airpods1} alt="Image" /></div>
             <p className="lg:text-xl font-light">Лучший звук 2023 года</p>
-            <p className="lg:text-xl font-medium">120 000 ₽</p>
+            <p className="lg:text-xl font-medium">1 000 ₽</p>
           </div>
           <div onClick={function() {navigate('/laptops')}} className="card bg-[#f0efe8]
           cursor-pointer cardsbg shadow-md shadow-[#ada3a3] border-opacity-50 p-4">
@@ -96,9 +98,10 @@ function Mainbody() {
           </div>
         </div>
         <div className="flex justify-center flex-col gap-6 items-center">
+          <Arts />
           <Swings />
           <Delivery />
-          <Money />
+          <Money /> 
         </div>
       </div>
       {showButton && (

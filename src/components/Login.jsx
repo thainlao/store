@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Navigate, useNavigate } from "react-router-dom";
 import '../styles/login.css';
 
@@ -10,6 +10,15 @@ const Login = ({ setIsLoggedIn }) => {
   const [isSuccess, setIsSuccess] = useState(false);
   const navigate = useNavigate();
 
+  useEffect(() => {
+    const storedUsername = localStorage.getItem('username');
+    const storedEmail = localStorage.getItem('email');
+    if (storedUsername && storedEmail) {
+      setUsername(storedUsername);
+      setEmail(storedEmail);
+    }
+  }, []);
+
   const handleSignUp = (e) => {
     e.preventDefault();
     const storedEmail = localStorage.getItem('email');
@@ -17,14 +26,14 @@ const Login = ({ setIsLoggedIn }) => {
       setModalMessage('Данный email уже используется');
       setIsSuccess(false);
     } else {
-    localStorage.setItem('username', username);
-    localStorage.setItem('email', email);
-    localStorage.setItem('password', password);
-    setModalMessage('Success registration');
-    setUsername('');
-    setEmail('');
-    setPassword('');
-    setIsSuccess(true);
+      localStorage.setItem('username', username);
+      localStorage.setItem('email', email);
+      localStorage.setItem('password', password);
+      setModalMessage('Success registration');
+      setUsername('');
+      setEmail('');
+      setPassword('');
+      setIsSuccess(true);
     }
   };
 

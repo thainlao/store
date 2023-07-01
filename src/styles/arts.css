@@ -1,0 +1,30 @@
+.arts {
+    width: 90%;
+    height: 55vh;
+    background-color: #f0efe8;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease-in;
+}
+
+.artswidth {
+    width: 1150px;
+    height: auto;
+    transition: opacity 0.5s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .artswidth {
+      width: 340px; /* Change the width to occupy the full width of the viewport */
+      height: auto;
+      margin-right: 0px;
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .artswidth {
+      width: 90%;
+    }
+  }
+  
