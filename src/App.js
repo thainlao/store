@@ -28,6 +28,13 @@ function App() {
   const [korzCount, setkorzcount] = useState(0);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+    const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
 
   const handleBuyClick = (newPrice, item) => {
     setPrice((prevPrice) => prevPrice + newPrice);

@@ -1,12 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/dashboard.css'
 import { Navigate, useNavigate } from 'react-router-dom';
+
 const Dashboard = () => {
   let [profileImage, setProfileImage] = useState(localStorage.getItem('profileImage'));
   let username = localStorage.getItem('username');
   let email = localStorage.getItem('email');
   let password = localStorage.getItem('password');
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const isLoggedIn = localStorage.getItem('isLoggedIn');
+    if (!isLoggedIn) {
+      navigate('/login');
+    }
+  }, []);
 
   const handleImageUpload = (event) => {
     const file = event.target.files[0];
@@ -22,6 +30,11 @@ const Dashboard = () => {
       reader.readAsDataURL(file);
     }
   };
+
+  const logout = () => {
+    localStorage.removeItem('isLoggedIn');
+    navigate('/login', { replace: true });
+  }
 
   return (
     <div
@@ -46,6 +59,7 @@ const Dashboard = () => {
       {profileImage && <img className='lg:w-32 md:w-30 xl:w-32 2xl:w-32 2xl:h-32 xl:h-32 md:h-30 h-14 w-14 lg:h-32' src={profileImage} alt="Profile" />}
       <hr  className='bg-black p-[0.5px] '/>
       </div>
+      <button onClick={logout} className='lg:w-36 md:w-32 md:h-12 lg:h-12 w-28 h-9  rounded-md hover:bg-[#b4a9a9] items-center bg-[#c9bdbd] text-white'>Log out</button>
     </div>
   );
 };

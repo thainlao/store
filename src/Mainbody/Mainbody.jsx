@@ -75,7 +75,7 @@ function Mainbody() {
           </div>
         </div>
         <div className="py-10 flex-container gap-5 ">
-        <div onClick={function() {navigate('/iphones')}} className="card bg-[#f0efe8]
+        <div onClick={function() {navigate('/phones')}} className="card bg-[#f0efe8]
           cursor-pointer cardsbg shadow-md shadow-[#ada3a3] border-opacity-50 p-4">
           <p className="lg:text-xl  font-medium">iPhone 13</p>
             <div className="flex justify-center"><img className="lg:h-40 lg:w-40 md:h-36 md:w-36 h-12 w-12" src={iphone} alt="Image" /></div>

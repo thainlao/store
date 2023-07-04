@@ -11,6 +11,14 @@ const Login = ({ setIsLoggedIn }) => {
   const navigate = useNavigate();
 
   useEffect(() => {
+    const isLoggedIn = localStorage.getItem('isLoggedIn');
+    if (isLoggedIn === 'true') {
+      setIsLoggedIn(true);
+      navigate('/dashboard');
+    }
+  }, [navigate, setIsLoggedIn]);
+
+  useEffect(() => {
     const storedUsername = localStorage.getItem('username');
     const storedEmail = localStorage.getItem('email');
     if (storedUsername && storedEmail) {
@@ -45,7 +53,8 @@ const Login = ({ setIsLoggedIn }) => {
       setModalMessage('Вы успешно зашли в свой аккаунт');
       setIsSuccess(true);
       setIsLoggedIn(true);
-      navigate('/dashboard')
+      localStorage.setItem('isLoggedIn', 'true');
+      navigate('/dashboard');
     } else {
       setModalMessage('Не правильный логин или пароль');
       setIsSuccess(false);

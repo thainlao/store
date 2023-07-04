@@ -6,6 +6,7 @@ import emailpng from '../2assets/email.png';
 import addresspng from '../2assets/address.png';
 import namepng from '../2assets/name.png';
 import Orders from "./Orders";
+import '../styles/modal.css'
 
 const Korzina = ({ items, onRemoveItemClick, setkorzcount, setPrice, setItems  }) => {
   const [isPackagingChecked, setPackagingChecked] = useState(false);
@@ -146,15 +147,15 @@ const Korzina = ({ items, onRemoveItemClick, setkorzcount, setPrice, setItems  }
         </div>
       )}
 
-      {isModalOpen && (
-        <div className="fixed inset-0 bg-gray-800 bg-opacity-70 flex items-center justify-center">
-          <div className="bg-white rounded-lg p-8 lg:w-96 md:w-80 w-64">
+      {isModalOpen && ( 
+        <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-70">
+          <div className="bg-white modalwindow">
             {!isOrderPlaced ? (
               <form onSubmit={handleFormSubmit}>
-                <div className="mb-4">
+                <div className='mb-2'>
                   <label htmlFor="name" className="flex items-center gap-2">
                     <img src={namepng} alt="name" className="w-6 h-6"/>
-                    <span>Имя:</span>
+                    <span className="text-sm">Имя:</span>
                   </label>
                   <input
                     type="text"
@@ -163,13 +164,13 @@ const Korzina = ({ items, onRemoveItemClick, setkorzcount, setPrice, setItems  }
                     value={name}
                     onChange={handleNameChange}
                     required
-                    className="border-gray-300 border-2 p-2 rounded w-full lg:h-12 md:h-9 h-6"
+                    className="border-gray-300 border-2 p-2 rounded w-full lg:h-12 md:h-9 h-4"
                   />
                 </div>
-                <div className="mb-4">
+                <div className="mb-2">
                   <label htmlFor="phone" className="flex items-center gap-2">
                     <img src={phonepng} alt="phone" className="w-6 h-6"/>
-                    <span>Телефон:</span>
+                    <span className="text-sm">Телефон:</span>
                   </label>
                   <input
                     type="tel"
@@ -178,13 +179,13 @@ const Korzina = ({ items, onRemoveItemClick, setkorzcount, setPrice, setItems  }
                     value={phone}
                     onChange={handlePhoneChange}
                     required
-                    className="border-gray-300 border-2 p-2 rounded w-full lg:h-12 md:h-9 h-6"
+                    className="border-gray-300 border-2 p-2 rounded w-full lg:h-12 md:h-9 h-4"
                   />
                 </div>
-                <div className="mb-4">
+                <div className="mb-2">
                   <label htmlFor="email" className="flex items-center gap-2">
                     <img src={emailpng} alt="email" className="w-6 h-6"/>
-                    <span>Email:</span>
+                    <span className="text-sm">Email:</span>
                   </label>
                   <input
                     type="email"
@@ -199,7 +200,7 @@ const Korzina = ({ items, onRemoveItemClick, setkorzcount, setPrice, setItems  }
                 <div className="mb-4">
                   <label htmlFor="address" className="flex items-center gap-2">
                     <img src={addresspng} alt="address" className="w-6 h-6" />
-                    <span>Адрес:</span>
+                    <span className="text-sm">Адрес:</span>
                   </label>
                   <input
                     type="text"
@@ -208,10 +209,10 @@ const Korzina = ({ items, onRemoveItemClick, setkorzcount, setPrice, setItems  }
                     value={address}
                     onChange={handleAddressChange}
                     required
-                    className="border-gray-300 border-2 p-2 rounded w-full"
+                    className="border-gray-300 border-2 p-2 rounded w-full lg:h-12 md:h-9 h-6"
                   />
                 </div>
-                <div className="mb-4">
+                <div className="mb-2">
                   <label htmlFor="packaging" className="flex items-center gap-2">
                     <input
                       type="checkbox"
@@ -224,7 +225,7 @@ const Korzina = ({ items, onRemoveItemClick, setkorzcount, setPrice, setItems  }
                     <span>Упаковка подарка</span>
                   </label>
                 </div>
-                <div className="mb-4">
+                <div className="mb-2">
                   <label htmlFor="delivery" className="flex items-center gap-2">
                     <input
                       type="radio"
@@ -238,7 +239,7 @@ const Korzina = ({ items, onRemoveItemClick, setkorzcount, setPrice, setItems  }
                     <span>Доставка</span>
                   </label>
                 </div>
-                <div className="mb-4">
+                <div className="mb-2">
                   <label htmlFor="pickup" className="flex items-center gap-2">
                     <input
                       type="radio"
@@ -252,7 +253,7 @@ const Korzina = ({ items, onRemoveItemClick, setkorzcount, setPrice, setItems  }
                     <span>Самовывоз</span>
                   </label>
                 </div>
-                <div className="mb-4">
+                <div className="lg:mb-4 mb-2">
                   <label htmlFor="payment" className="flex items-center gap-2">
                     <span>Способ оплаты:</span>
                   </label>
@@ -261,25 +262,35 @@ const Korzina = ({ items, onRemoveItemClick, setkorzcount, setPrice, setItems  }
                     name="paymentOption"
                     value={paymentOption}
                     onChange={handlePaymentOptionChange}
-                    className="border-gray-300 border-2 p-2 rounded w-full"
+                    className="border-gray-300 border-2 p-1 lg:p-2 rounded w-full"
                   >
                     <option value="">Выберите способ оплаты</option>
                     <option value="cash">Наличные</option>
                     <option value="card">Карта</option>
                   </select>
                 </div>
-                <div className="flex justify-center">
+                <div className="flex justify-center gap-5">
                   <button
                     type="submit"
-                    className="py-2 px-6 bg-primary text-black bg-[#ced1ce] text-lg rounded-lg"
+                    className="w-36 lg:w-48 h-12 bg-primary text-black bg-[#bee493]
+                    shadow-lg hover:bg-[#badf90] lg:text-xl text-sm rounded-lg"
                   >
                     Подтвердить заказ
+                  </button>
+
+                  <button
+                    onClick={() => setModalOpen(false)}
+                    type="submit"
+                    className="w-20 h-12 lg:text-base text-sm bg-primary text-black bg-[#ced1ce] hover:bg-[#c1c7c1] rounded-lg"
+                  >
+                    Закрыть
                   </button>
                 </div>
               </form>
             ) : (
-              <div className="text-center">
+              <div className="text-center flex justify-center items-center gap-5 flex-col">
                 <p className="text-xl mb-4">Заказ успешно размещен!</p>
+                <p className="text-xl mb-4">Скоро с вами свяжется наши сотрудники</p>
                 <button
                   className="py-2 px-6 bg-primary text-black bg-[white] text-lg rounded-lg shadow-lg border border-black"
                   onClick={handleModalClose}

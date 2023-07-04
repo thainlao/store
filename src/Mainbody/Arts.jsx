@@ -16,20 +16,18 @@ const Arts = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentCard((prevCard) => (prevCard % 4) + 1);
-    }, 7000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
     <div className="flex flex-col items-center justify-center">
-      <div className=" shadow-md flex items-center justify-center">
+      <div className="shadow-md flex items-center justify-center">
         <img
           src={cardImages[currentCard - 1]}
           alt={`Card ${currentCard}`}
-          className={`artswidth transition-opacity duration-500 ${
-            currentCard === 4 ? 'opacity-100' : 'opacity-100'
-          }`}
+          className='artswidth'
         />
       </div>
       <div className="flex mt-4">

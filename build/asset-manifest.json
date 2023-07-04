@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.82ec66bb.css",
+    "main.js": "/static/js/main.31adb9db.js",
+    "static/media/macbook1.png": "/static/media/macbook1.3ed928b254ffad492f69.png",
+    "static/media/airpods1.png": "/static/media/airpods1.dff2b38a27e02e9f8d2a.png",
+    "static/media/xbox1.png": "/static/media/xbox1.72d571d368ac070316ae.png",
+    "static/media/headset.png": "/static/media/headset.34d86009fe850f10c2d4.png",
+    "static/media/planshet.png": "/static/media/planshet.7fc457e94b9c28416335.png",
+    "static/media/iphone1.png": "/static/media/iphone1.56f967c1be3ec279b58f.png",
+    "static/media/pc.png": "/static/media/pc.d95165bd4a4cda8cb18d.png",
+    "static/media/login.png": "/static/media/login.28e44cb7f5d2425541e5.png",
+    "static/media/servise.png": "/static/media/servise.e423650a21a2f56501cf.png",
+    "static/media/Money-PNG-Photos.png": "/static/media/Money-PNG-Photos.85403c9c50e70abe60fc.png",
+    "static/media/logo.png": "/static/media/logo.316b4e487621d9f5ce13.png",
+    "static/media/delivery.png": "/static/media/delivery.c4db8e23357bb237d3ff.png",
+    "static/media/korzina.png": "/static/media/korzina.eca269cd88d93a7def68.png",
+    "static/media/sad.png": "/static/media/sad.cffcac5f4a9d248d8a20.png",
+    "index.html": "/index.html",
+    "main.82ec66bb.css.map": "/static/css/main.82ec66bb.css.map",
+    "main.31adb9db.js.map": "/static/js/main.31adb9db.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.82ec66bb.css",
+    "static/js/main.31adb9db.js"
+  ]
+}

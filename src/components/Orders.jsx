@@ -44,35 +44,35 @@ const Orders = () => {
       <div className="dashboardcontainer text-sm lg:text-xl md:text-xl lg:py-10 md:py-10 gap-5 flex justify-start flex-col">
         {orderDetails ? (
           <div className="flex justify-center items-center flex-col font-medium">
-            <p>Price: {orderDetails.price}</p>
+            <p>Сумма: {orderDetails.price.toLocaleString()}</p>
             <hr  className='bg-black p-[0.5px] w-full'/>
-            <p>Items:</p>
+            <p>Товары:</p>
             <hr  className='bg-black p-[0.5px] w-full'/>
             <ul>
               {orderDetails.items.map((item, index) => (
                 <li key={index}>
-                  {item.name} - Quantity: {item.quantity} - Amount: {item.amount}
+                  {item.name} - Количество: {item.quantity} - Цена: {item.amount}
                 </li>
               ))}
             </ul>
             <hr  className='bg-black p-[0.5px] w-full'/>
-            <p>Packaging Checked: {orderDetails.packagingChecked.toString()}</p>
+            <p>Упоковать в подарок? {orderDetails.packagingChecked.toString()}</p>
             <hr  className='bg-black p-[0.5px] w-full'/>
-            <p>Delivery Option: {orderDetails.deliveryOption}</p>
+            <p>Способ получения: {orderDetails.deliveryOption}</p>
             <hr  className='bg-black p-[0.5px] w-full'/>
-            <p>Payment Option: {orderDetails.paymentOption}</p>
+            <p>Выбор оплаты: {orderDetails.paymentOption}</p>
             <hr  className='bg-black p-[0.5px] w-full'/>
-            <p>Name: {orderDetails.name}</p>
+            <p>Имя: {orderDetails.name}</p>
             <hr  className='bg-black p-[0.5px] w-full'/>
-            <p>Phone: {orderDetails.phone}</p>
+            <p>Телефон: {orderDetails.phone}</p>
             <hr  className='bg-black p-[0.5px] w-full'/>
             <p>Email: {orderDetails.email}</p>
             <hr  className='bg-black p-[0.5px] w-full'/>
-            <p>Address: {orderDetails.address}</p>
+            <p>Адрес: {orderDetails.address}</p>
             <hr  className='bg-black p-[0.5px] w-full'/>
           </div>
         ) : (
-          <p>No order details found.</p>
+          <p className="flex items-center justify-center">Пока вы не сделали ни одного заказа :(</p>
         )}
       </div>
     </div>
