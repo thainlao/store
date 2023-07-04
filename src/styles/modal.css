@@ -1,0 +1,46 @@
+.modalwindow {
+    border-radius: 0.5re;
+    padding: 2rem;
+    width: 100%;
+}
+
+@media (min-width: 640px) {
+    .modalwindow {
+        max-width: 28rem/* 448px */;
+    }
+}
+
+@media (min-width: 1024px) {
+    .modalwindow {
+        max-width: 32rem/* 512px */;
+    }
+}
+
+@media (max-width: 768px) {
+    .modalwindow {
+      padding: 0px;
+      flex-direction: column;
+      height: 50%;
+      width: 90%;
+    }
+  
+    .modalwindow form {
+      padding-bottom: 1rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-top: 1rem;
+      background-color: white; 
+    }
+  }
+
+  @media (min-width: 640px) {
+    .modalwindow {
+      max-width: 28rem; /* 448px */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .modalwindow {
+      max-width: 32rem; /* 512px */
+    }
+  }

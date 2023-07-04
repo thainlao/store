@@ -4,7 +4,7 @@ import Header from './components/Header';
 import Headset from './Links/Headset';
 import Laptops from './Links/Laptops';
 import Phones from './Links/Phones';
-import { BrowserRouter as Router, Link, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Link, Routes, Route, useNavigate } from "react-router-dom";
 import Pcs from './Links/Pcs';
 import Consoles from './Links/Consoles';
 import Ipads from './Links/Ipads';
@@ -20,6 +20,7 @@ import photo1 from './assets/airpods1.png';
 import photo2 from './assets/applewatch.png';
 import photo3 from './assets/macbook1.png';
 import photo4 from './assets/xbox1.png';
+import Search from './Mainbody/Search';
 
 function App() {
   const [showMainbody, setShowMainbody] = useState(true);
@@ -28,6 +29,8 @@ function App() {
   const [korzCount, setkorzcount] = useState(0);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+
     const closeModal = () => {
     setIsModalOpen(false);
   };
@@ -84,6 +87,7 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/redux" element={<Redux />} />
         <Route path="/orders" element={<Orders />} />
+        <Route path="/search" element={<Search />} />
       </Routes>
     </Router>
   );

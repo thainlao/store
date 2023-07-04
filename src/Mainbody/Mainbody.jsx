@@ -20,6 +20,7 @@ import End from "./End";
 import scrollpng from '../assets/scroll.png';
 import { Navigate, useNavigate } from "react-router-dom";
 import Arts from "./Arts";
+import Search from "./Search";
 
 function Mainbody() {
   const [showButton, setshowButton ] = useState(false);
@@ -98,6 +99,7 @@ function Mainbody() {
           </div>
         </div>
         <div className="flex justify-center flex-col gap-6 items-center">
+        <Search />
           <Arts />
           <Swings />
           <Delivery />

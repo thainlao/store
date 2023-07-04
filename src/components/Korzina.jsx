@@ -290,9 +290,9 @@ const Korzina = ({ items, onRemoveItemClick, setkorzcount, setPrice, setItems  }
             ) : (
               <div className="text-center flex justify-center items-center gap-5 flex-col">
                 <p className="text-xl mb-4">Заказ успешно размещен!</p>
-                <p className="text-xl mb-4">Скоро с вами свяжется наши сотрудники</p>
+                <p className="text-xl mb-4">Мы скоро с вами свяжемся</p>
                 <button
-                  className="py-2 px-6 bg-primary text-black bg-[white] text-lg rounded-lg shadow-lg border border-black"
+                  className="py-2 px-6 bg-primary text-black bg-[#a5daa5] hover:bg-[#98c998] text-lg rounded-lg shadow-lg"
                   onClick={handleModalClose}
                 >
                   Закрыть
