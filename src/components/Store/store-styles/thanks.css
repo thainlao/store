@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300&display=swap');
+.thanks {
+    background: linear-gradient(45deg, #8a4bc2, #6e79df, #c5e99c);
+    background-size: 400% 400%;
+    animation: gradientAnimation 4s ease infinite;
+    height: 100vh;
+}
+
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+  
+.thanks_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem;
+    padding: 6rem;
+}
+
+.thanks_maintext {
+    color: white;
+    padding: 0rem;
+    font-size: 3rem;
+    -webkit-text-stroke: 1px solid #b95353;
+    font-family: 'Big Shoulders Display', cursive;
+    white-space: nowrap;
+}
+
+@media screen and (min-width: 1280px) {
+    .thanks_maintext {
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .thanks_maintext{
+        font-size: 3rem;
+    }
+  }
+
+.thanks_subtext_container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.thanks_subtext {
+    color: white;
+    font-size: 2rem;
+    white-space: nowrap;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+@media screen and (min-width: 1280px) {
+    .thanks_subtext {
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .thanks_subtext{
+        font-size: 1rem;
+    }
+  }
+
+.link_th {
+    color: white;
+    text-decoration-line: underline;
+    transition: all 0.2s ease-in;
+}
+
+.link_th:hover {
+    transform: scale(1.1);
+}
+
+.thanks_rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.star {
+    font-size: 44px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 1280px) {
+    .star {
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .star{
+        font-size: 33px;
+    }
+  }
+
+.star.selected {
+    color: gold;
+}

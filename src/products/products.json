@@ -1,0 +1,454 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "gender": ["female"],
+      "type": "вверх",
+      "cloth": "Платье",
+      "size": ["S","M","L","XL"],
+      "name": "bond-eye",
+      "price": 21270 ,
+      "image": "https://st2.tsum.com/sig/2249ca7d51fdf17b3bdaa739a64549a9/width/434/i/9b/db/a5/fc/9bdba5fc-c54c-3b69-930d-e6f7e6d18ab1.jpg"
+    },
+    {
+      "id": 2,
+      "gender": ["female"],
+      "type": "вверх",
+      "cloth": "Платье",
+      "size": ["S","M","L","XL"],
+      "name": "DRIES VAN NOTTEN",
+      "price": 75200 ,
+      "image": "https://st1.tsum.com/sig/21ae1b96d807459409a38d4201c5f775/width/434/i/1c/00/e6/1b/1c00e61b-4165-3dbc-9902-d04031ef2faf.jpg"
+    },
+    {
+      "id": 3,
+      "gender": ["female"],
+      "type": "вверх",
+      "cloth": "Платье",
+      "size": ["S","M","L","XL"],
+      "name": "Nanushka",
+      "price": 48950 ,
+      "image": "https://st1.tsum.com/sig/f469e64a9035022b3756d5a4eaaeae06/width/434/i/c4/13/9e/c0/c4139ec0-63e8-3cc8-b788-3712d856706c.jpg"
+    },
+    {
+      "id": 4,
+      "gender": ["male", "female"],
+      "type": "вверх",
+      "cloth": "Пиджак",
+      "size": ["S","M","L","XL"],
+      "name": "BATS",
+      "price": 43500 ,
+      "image": "https://st1.tsum.com/sig/905d89561dc507c87d5fc2f5d20dfa18/width/434/i/ae/1d/63/46/ae1d6346-de96-3363-9ae7-33465be1766a.jpg"
+    },
+    {
+      "id": 5,
+      "gender": ["female"],
+      "type": "вверх",
+      "name": "MAGDA BUTRYM",
+      "size": ["S","M","L","XL"],
+      "cloth": "Платье",
+      "price": 39000 ,
+      "image": "https://st1.tsum.com/sig/55b9536d8d691f6559fa3fd4afbee44c/width/434/i/01/a5/6a/08/01a56a08-48a0-3145-ad51-0e86d75c26e2.jpg"
+    },
+    {
+      "id": 6,
+      "gender": ["female"],
+      "type": "вверх",
+      "name": "ROHTE",
+      "size": ["S","M","L","XL"],
+      "cloth": "Платье",
+      "price": 19500 ,
+      "image": "https://st1.tsum.com/sig/1cb6873ec21497a89e52170c4365558f/width/434/i/fd/28/56/36/fd285636-bef7-3065-ab74-b04403948a12.jpg"
+    },
+    {
+      "id": 7,
+      "gender": ["female"],
+      "type": "вверх",
+      "name": "SASHAVERSE",
+      "cloth": "Платье",
+      "size": ["S","M","L","XL"],
+      "price": 42000 ,
+      "image": "https://st2.tsum.com/sig/c1ea23f41c13401607ef04b67ccf8f8b/width/434/i/c1/05/0c/ab/c1050cab-f917-3805-b882-4b13781efa33.jpg"
+    },
+    {
+      "id": 8,
+      "gender": ["female"],
+      "type": "вверх",
+      "name": "des PHEMEMMES",
+      "size": ["S","M","L","XL"],
+      "cloth": "Платье",
+      "price": 56500 ,
+      "image": "https://st2.tsum.com/sig/b9c9b0ec526b427f1bb967fbf4826a57/width/434/i/37/1d/e7/5c/371de75c-06f1-39b0-9b87-525ef1650ffe.jpg"
+    },
+    {
+      "id": 9,
+      "gender": ["female"],
+      "type": "вверх",
+      "cloth": "Платье",
+      "name": "DIESEL",
+      "size": ["S","M","L","XL"],
+      "price": 48000 ,
+      "image": "https://st2.tsum.com/sig/f1bd5c56c8964a6d7bba6af215f3eaf5/width/434/i/50/31/d5/eb/5031d5eb-34fd-3c70-a847-55a58fefe30d.jpg"
+    },
+    {
+      "id": 10,
+      "gender": ["female"],
+      "type": "вверх",
+      "cloth": "Платье",
+      "name": "DSQUARED2",
+      "size": ["S","M","L","XL"],
+      "price": 50200 ,
+      "image": "https://st1.tsum.com/sig/3d82c51a5033c0fbb042ac4a4379fe6e/width/434/i/31/60/ca/77/3160ca77-a804-301d-a37f-3dfbf6cd04c9.jpg"
+    },
+    {
+      "id": 11,
+      "gender": ["female"],
+      "type": "вверх",
+      "cloth": "Платье",
+      "name": "Ermanno Scervinho",
+      "size": ["S","M","L","XL"],
+      "price": 61800 ,
+      "image": "https://st2.tsum.com/sig/4a145071e00aa6442e0fceb4f1b6fc13/width/434/i/2c/cc/d3/2a/2cccd32a-49a0-39e4-8840-0f2982a58ed8.jpg"
+    },
+    {
+      "id": 12,
+      "gender": ["female"],
+      "type": "вверх",
+      "cloth": "Платье",
+      "name": "FORTE DEI MERMI COUTURE",
+      "size": ["S","M","L","XL"],
+      "price": 28200 ,
+      "image": "https://st2.tsum.com/sig/e8860c5aa720164dee3daa4e523d0e71/width/434/i/c5/97/9d/5b/c5979d5b-3965-3ec3-a228-cd7e90a68196.jpg"
+    },
+    {
+      "id": 13,
+      "gender": ["male"],
+      "type": "вверх",
+      "cloth": "Куртка",
+      "name": "YVES SALMON",
+      "size": ["S","M","L","XL"],
+      "price": 38200 ,
+      "image": "https://st2.tsum.com/sig/a28a87473df08292b0be6b0c067ea0c8/width/434/i/42/d7/d9/32/42d7d932-193a-38a5-aecd-7727ffa96a23.jpg"
+    },
+    {
+      "id": 14,
+      "gender": ["female"],
+      "type": "вверх",
+      "size": ["S","M","L","XL"],
+      "cloth": "Куртка",
+      "name": "BOSS",
+      "price": 62200 ,
+      "image": "https://st2.tsum.com/sig/1856399e719318312025d65cb4b60b01/width/434/i/cb/02/71/f5/cb0271f5-6a9a-362a-883f-e58a91ed389a.jpg"
+    },
+    {
+      "id": 15,
+      "gender": ["male", "female"],
+      "type": "вверх",
+      "size": ["S","M","L","XL"],
+      "cloth": "Куртка",
+      "name": "BATS",
+      "price": 52200 ,
+      "image": "https://st.tsum.com/btrx/i/12/73/76/52/01_434.jpg?u=1650784407"
+    },
+    {
+      "id": 16,
+      "gender": ["female"],
+      "type": "вверх",
+      "size": ["S","M","L","XL"],
+      "cloth": "Куртка",
+      "name": "PRADA",
+      "price": 90200 ,
+      "image": "https://st2.tsum.com/sig/ca05026831524ca39af8e3b09835c274/width/434/i/1c/0e/91/99/1c0e9199-7bc4-36f2-91ae-723fb3650709.jpg"
+    },
+    {
+      "id": 17,
+      "gender": ["female"],
+      "type": "вверх",
+      "size": ["S","M","L","XL"],
+      "cloth": "Куртка",
+      "name": "BATS",
+      "price": 47200 ,
+      "image": "https://st2.tsum.com/sig/2ac7d1cf5af0aed276caf396ad32dfee/width/434/i/18/1a/87/e8/181a87e8-72f4-31e9-9ff2-eed6c0b59a81.jpg"
+    },
+    {
+      "id": 18,
+      "gender": ["male", "female"],
+      "type": "вверх",
+      "cloth": "Куртка",
+      "name": "MONCLER",
+      "size": ["S","M","L","XL"],
+      "price": 58900 ,
+      "image": "https://st2.tsum.com/sig/04cbc87ea230f698ea3585b0f681e8d7/width/434/i/69/45/92/dc/694592dc-18e8-388b-b0a5-d7fa1ecb9db4.jpg"
+    },
+    {
+      "id": 19,
+      "gender": ["male", "female"],
+      "type": "вверх",
+      "cloth": "Куртка",
+      "size": ["S","M","L","XL"],
+      "name": "MONCLER",
+      "price": 79950 ,
+      "image": "https://st2.tsum.com/sig/beb2f16e3057bd918b813de2f89c4a03/width/434/i/d6/09/65/4d/d609654d-6256-3a33-8e5e-c4ab7fbd349b.jpg"
+    },
+    {
+      "id": 20,
+      "gender": ["female", "male"],
+      "type": "вверх",
+      "cloth": "Куртка",
+      "size": ["S","M","L","XL"],
+      "name": "Boboogie",
+      "price": 28300 ,
+      "image": "https://st1.tsum.com/sig/946733ad8fa0996482d2a772c9b65b07/width/434/i/ae/cf/56/d2/aecf56d2-25c8-34f4-8cc3-34befb6a2025.jpg"
+    },
+    {
+      "id": 21,
+      "gender": ["male", "female"],
+      "type": "низ",
+      "name": "Rick Owens",
+      "size": ["39","40","41","42"],
+      "cloth": "Обувь",
+      "price": 42200 ,
+      "image": "https://st2.tsum.com/sig/b63ed360cd561effcfb28fbe513117da/width/434/i/0c/d2/de/11/0cd2de11-dd46-3d38-ba3b-5a01c952abfb.jpg"
+    },
+    {
+      "id": 22,
+      "gender": ["male", "female"],
+      "type": "низ",
+      "cloth": "Обувь",
+      "name": "Rick Owens",
+      "size": ["39","40","41","42"],
+      "price": 56500,
+      "image": "https://st2.tsum.com/sig/33de4fdc195639d1f6fa77feb535ded0/width/434/i/4e/3d/17/29/4e3d1729-8e6b-3c2e-af56-46fd9b1cd462.jpg"
+    },
+    {
+      "id": 23,
+      "gender": ["female", "male"],
+      "type": "низ",
+      "cloth": "Обувь",
+      "size": ["39","40","41","42"],
+      "name": "Rick Owens",
+      "price": 64200 ,
+      "image": "https://st2.tsum.com/sig/c7b322ea9df279592f90db80fbc59cf4/width/434/i/12/8e/52/26/128e5226-20ae-3f3f-9462-c2b578d14534.jpg"
+    },
+    {
+      "id": 24,
+      "gender": ["male", "female"],
+      "type": "низ",
+      "cloth": "Обувь",
+      "size": ["39","40","41","42"],
+      "name": "SAINT LAURENT",
+      "price": 21800 ,
+      "image": "https://st1.tsum.com/sig/8c3fbcdabe2700eb3f1a34edd7eee365/width/434/i/28/91/67/73/28916773-dbd4-3a7c-91b2-4e0afd4d35ee.jpg"
+    },
+    {
+      "id": 25,
+      "gender": ["male"],
+      "type": "вверх",
+      "cloth": "Пиджак",
+      "name": "CANALI",
+      "size": ["S","M","L","XL"],
+      "price": 55200 ,
+      "image": "https://st1.tsum.com/sig/ad25aa68fd3c919e88e9a2ffdce834ca/width/434/i/a1/9c/40/84/a19c4084-bbf8-3026-a9d4-4b0231acba6b.jpg"
+    },
+    {
+      "id": 26,
+      "gender": ["female"],
+      "type": "вверх",
+      "cloth": "Пиджак",
+      "size": ["S","M","L","XL"],
+      "name": "Brioni",
+      "price": 92100 ,
+      "image": "https://st1.tsum.com/sig/ad25aa68fd3c919e88e9a2ffdce834ca/width/434/i/a1/9c/40/84/a19c4084-bbf8-3026-a9d4-4b0231acba6b.jpg"
+    },
+    {
+      "id": 27,
+      "gender": ["male"],
+      "type": "вверх",
+      "cloth": "Пиджак",
+      "name": "Brioni",
+      "size": ["S","M","L","XL"],
+      "price": 98200 ,
+      "image": "https://st2.tsum.com/sig/c5f1054902037eb085ce1bb577207154/width/434/i/45/ff/ca/0e/45ffca0e-4589-3a4f-bc09-64c919863b95.jpg"
+    },
+    {
+      "id": 28,
+      "gender": ["male"],
+      "type": "вверх",
+      "cloth": "Пиджак",
+      "name": "Brioni",
+      "size": ["S","M","L","XL"],
+      "price": 22200 ,
+      "image": "https://st2.tsum.com/sig/a74f759becb3b9378b1363963e13e77b/width/434/i/fc/52/51/a9/fc5251a9-69d1-384d-b3f9-35034b4218db.jpg"
+    },
+    {
+      "id": 29,
+      "gender": ["male"],
+      "type": "вверх",
+      "cloth": "Пиджак",
+      "name": "GUCCI",
+      "size": ["S","M","L","XL"],
+      "price": 32900 ,
+      "image": "https://st2.tsum.com/sig/4a293b2f7afbe25d9b703d82b66e335a/width/434/i/6c/c0/6d/a6/6cc06da6-2534-3168-9767-4892caf661f8.jpg"
+    },
+    {
+      "id": 30,
+      "gender": ["male", "female"],
+      "type": "низ",
+      "cloth": "Часы",
+      "size": ["No size"],
+      "name": "ZENITH",
+      "price": 365000 ,
+      "image": "https://st1.tsum.com/sig/6766af935a8db93cc0d8e20271fa8f3c/width/434/i/95/4f/2e/b8/954f2eb8-59f7-32ab-abe8-907c62c7c06e.jpg"
+    },
+    {
+      "id": 31,
+      "gender": ["male", "female"],
+      "type": "низ",
+      "cloth": "Часы",
+      "size": ["No size"],
+      "name": "ZENITH",
+      "price": 42400 ,
+      "image": "https://st2.tsum.com/sig/09e339c275c3142eb2f5521954b92051/width/434/i/ce/d4/83/74/ced48374-0e12-366e-ada6-71803f4e0ebf.jpg"
+    },
+    {
+      "id": 32,
+      "gender": ["male", "female"],
+      "type": "низ",
+      "cloth": "Часы",
+      "size": ["No size"],
+      "name": "ZENITH",
+      "price": 98200 ,
+      "image": "https://st2.tsum.com/sig/187586e1504329e25ca8df92f89cbd12/width/434/i/69/15/d0/7b/6915d07b-00af-3736-be10-5a77851802f7.jpg"
+    },
+    {
+      "id": 33,
+      "gender": ["male", "female"],
+      "type": "низ",
+      "cloth": "Часы",
+      "size": ["No size"],
+      "name": "Folding Umbrella",
+      "price": 28800 ,
+      "image": "https://st2.tsum.com/sig/fa8a6dee1b9775fa7baafa067148cda3/width/434/i/63/d7/a7/46/63d7a746-90e8-3119-8c85-bbfbdfeb0b0d.jpg"
+    },
+    {
+      "id": 34,
+      "gender": ["male", "female"],
+      "type": "низ",
+      "cloth": "Часы",
+      "size": ["No size"],
+      "name": "Millie Miglia GT Chrono",
+      "price": 175000,
+      "image": "https://st1.tsum.com/sig/53afa2e9bbf9f14c64b60f34d64eed01/width/434/i/eb/4d/a1/9a/eb4da19a-fcd7-3e37-9fb6-5a0819c69aa5.jpg"
+    },
+    {
+      "id": 35,
+      "gender": ["male", "female"],
+      "type": "низ",
+      "cloth": "Часы",
+      "size": ["No size"],
+      "name": "ZENITH",
+      "price": 23200 ,
+      "image": "https://st1.tsum.com/sig/0461b0977acfaf419485e225c70eeb38/width/434/i/d7/3f/f7/f5/d73ff7f5-9442-318c-9d0d-4037b47d15e1.jpg"
+    },
+    {
+      "id": 36,
+      "gender": ["male", "female"],
+      "type": "вверх",
+      "cloth": "Футболка",
+      "size": ["S","M","L","XL"],
+      "name": "MARNI",
+      "price":65600 ,
+      "image": "https://st2.tsum.com/sig/227713993313571eb7e102429145f245/width/434/i/e9/58/d3/15/e958d315-6fb8-3e49-8e3c-0b89ca96a181.jpg"
+    },
+    {
+      "id": 37,
+      "gender": ["male", "female"],
+      "type": "низ",
+      "cloth": "Футболка",
+      "size": ["S","M","L","XL"],
+      "name": "DIESEL",
+      "price": 18500 ,
+      "image": "https://st1.tsum.com/sig/bad45e679214503574223ea397f63337/width/434/i/25/c1/38/ae/25c138ae-e834-3740-8505-3509bd14a892.jpg"
+    },
+    {
+      "id": 38,
+      "gender": ["female"],
+      "type": "вверх",
+      "cloth": "Футболка",
+      "size": ["S","M","L","XL"],
+      "name": "BALMAIN PARIS",
+      "price": 45200 ,
+      "image": "https://st2.tsum.com/sig/12be65cb7bf53b4b7aaf14c34cd3db8e/width/434/i/65/de/ad/2b/65dead2b-4b87-3551-b2b4-79e4d57bf124.jpg"
+    },
+    {
+      "id": 39,
+      "gender": ["female"],
+      "type": "вверх",
+      "cloth": "Сумка",
+      "size": ["No size"],
+      "name": "PRADA",
+      "price": 87100 ,
+      "image": "https://st2.tsum.com/sig/d55ed43aeb64b76095d79683eb42a0f3/width/434/i/06/56/a3/de/0656a3de-5230-326e-8857-abbf1016af85.jpg"
+    },
+    {
+      "id": 40,
+      "gender": ["female"],
+      "type": "вверх",
+      "cloth": "Сумка",
+      "name": "DIESEL",
+      "size": ["No size"],
+      "price": 25200 ,
+      "image": "https://st2.tsum.com/sig/5607c69e1386f484cb4e37c048e35637/width/434/i/47/e6/ec/f6/47e6ecf6-313b-3f29-9eb3-46c880a8b289.jpg"
+    },
+    {
+      "id": 41,
+      "gender": ["female"],
+      "type": "вверх",
+      "cloth": "Сумка",
+      "size": ["No size"],
+      "name": "DIESEL",
+      "price": 36800 ,
+      "image": "https://st1.tsum.com/sig/467a3e18bc868c1e178104bd4a064276/width/434/i/08/6c/a0/e3/086ca0e3-cebb-39bb-9322-b28f6f7e5616.jpg"
+    },
+    {
+      "id": 42,
+      "gender": ["female"],
+      "type": "вверх",
+      "cloth": "Сумка",
+      "size": ["No size"],
+      "name": "GUCCI",
+      "price": 32200 ,
+      "image": "https://st2.tsum.com/sig/82d0acdab12f854ac8850c7a169a122b/width/434/i/c6/67/73/0e/c667730e-0bde-3cb5-98a8-a6154e4adb4d.jpg"
+    },
+    {
+      "id": 43,
+      "gender": ["female"],
+      "type": "низ",
+      "cloth": "Сумка",
+      "size": ["No size"],
+      "name": "MOSCHINO",
+      "price": 62100 ,
+      "image": "https://st1.tsum.com/sig/bb3d2dce74dc2ce9623b74d6eceedc50/width/434/i/39/ba/54/f5/39ba54f5-fe71-31d3-a331-4b8ac8dc1c67.jpg"
+    },
+    {
+      "id": 44,
+      "gender": ["female"],
+      "type": "низ",
+      "cloth": "Сумка",
+      "size": ["No size"],
+      "name": "DIESEL",
+      "price":59500 ,
+      "image": "https://st1.tsum.com/sig/fe85aff7d01604890f4e8d006a337e84/width/434/i/82/e9/fa/d2/82e9fad2-e87d-32f9-a32f-206a132183d1.jpg"
+    },
+    {
+      "id": 45,
+      "gender": ["female"],
+      "type": "вверх",
+      "cloth": "Сумка",
+      "size": ["No size"],
+      "name": "PRADA",
+      "price": 13200 ,
+      "image": "https://st1.tsum.com/sig/53b06c2cad1af41129567f04dccda63e/width/434/i/9a/5b/5e/9b/9a5b5e9b-84c1-30b8-9b9f-da742a27e57f.jpg"
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+.screen3 {
+    background-image: url('https://uploads-ssl.webflow.com/63fd0282d1adef725d6cb031/645366502ac3c3e145b0949a_image-02.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+.screen2_tipe {
+    height: 40vh;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 2rem;
+}
+@media screen and (min-width: 1280px) {
+    .screen2_tipe {
+        
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .screen2_tipe{
+        height: auto;
+    }
+}
+
+.tipe-main {
+    color: black;
+    font-size: 4rem;
+    line-height: 1.5;
+    font-weight: 500;
+}
+@media screen and (min-width: 1280px) {
+    .tipe-main {
+        
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .tipe-main{
+        font-size: 2rem;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+    }
+}
+
+.tipe-grey {
+    color: grey;
+    font-size: 2rem;
+    max-width: 550px;
+}
+
+@media screen and (min-width: 1280px) {
+    .tipe-grey {
+        
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .tipe-grey{
+        font-size: 1.5rem;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+.screen3_main_text {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    cursor: pointer;
+    font-weight: 300;
+    transition: all 0.5s ease-in-out;
+&:hover{
+    color: #3b3b72;
+} }
+
+@media screen and (min-width: 1280px) {
+    .screen3_main_text {
+        
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .screen3_main_text{
+        font-size: 3rem;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+.dark-bg {
+    width: 60%;
+    height: 40%;
+    opacity: .4;
+    filter: blur(80px);
+    background-color: #0f0f42;
+    position: absolute;
+    border-radius: 25%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: colored infinite 2.5s;
+}
+
+@keyframes colored {
+    0% {
+        background-color: #0f0f42;
+    } 
+    20% {
+        background-color: #3b3b72;
+    }
+    50%{
+        background-color: #6464ca;
+    }
+    75%{
+        background-color: #151553;
+    }
+    100%{
+        background-color: #161653;
+    } 
+}
+
